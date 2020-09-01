@@ -1,5 +1,8 @@
 import React from 'react';
 import './App.scss';
+import {ReactComponent as ArrowLeft} from './svg/arrow-left.svg';
+import {ReactComponent as ArrowRight} from './svg/arrow-right.svg';
+import {ReactComponent as TitleUnderline} from './svg/title-underline.svg';
 import Images from './ImagesImporter.js';
 import Facebook from './svg/facebook.svg';
 import Twitter from './svg/twitter.svg';
@@ -33,6 +36,8 @@ function App() {
             <section className="first-screen">
                 <div className="container">
                     <div className="svg-container">
+                        <ArrowLeft className="arrow left" />
+                        <ArrowRight className="arrow right" />
                     </div>
                     <div className="first-screen-empty-squares">
                         <div className="squares-empty-div"></div>
@@ -83,6 +88,7 @@ function App() {
                     <div className="why-choose-us-title">
                         <h2>Why choose us</h2>
                         <p>
+                            <TitleUnderline />
                         </p>
                     </div>
                     <div className="why-choose-us-content">
@@ -371,10 +377,13 @@ function App() {
                     <div className="our-projects-title">
                         <h2>Our projects</h2>
                         <p>
+                            <TitleUnderline />
                         </p>
                     </div>
                     <div className="our-projects-samples">
                         <div className="project-dark-layer">
+                            <ArrowLeft className="arrow left" />
+                            <ArrowRight className="arrow right" />
                         </div>
                         <div className="project" id="project-1">
                             <h3>Modern living room</h3>
