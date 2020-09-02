@@ -1,0 +1,118 @@
+.first-screen {
+    width: 100%;
+    margin: 0;  
+    .container {
+        width: 100%;
+        height: 880px;
+        margin: 0;
+        background-image: url('./first-screen.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        flex-flow: row nowrap;  
+        .svg-container {
+            position: absolute;
+            width: 100%;
+            height: 880px;
+            margin: 0;
+            display: flex;
+            justify-content: space-between; 
+            .arrow {
+                width: 5em;
+                height: 5em;
+                margin: 20px;
+                margin-top: 470px;
+                padding: 30px;
+                border: 4px solid rgba(255, 255, 255, 0.1);
+                background-color: rgba(0, 0, 0, 0.1);
+                border-radius: 50%;
+                z-index: 2;
+
+            }
+
+            .arrow:hover {
+                cursor: pointer;
+                border: 4px solid rgba(255, 255, 255, 0.3);
+                background-color: rgba(0, 0, 0, 0.3);
+            }
+        }   
+        .first-screen-empty-squares {
+            position: absolute;
+            width: 100%;
+            height: 880px;
+            margin: 0;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            background-color: rgba(53, 53, 56, 0.3);    
+            .squares-empty-div {
+                height: 880px;
+                flex: 1;
+                background-color: rgba(32, 33, 36, 0.5);
+            }   
+            .squares {
+                width: 880px;
+                height: 880px;
+                margin: 0;
+                border: 130px solid rgba(32, 33, 36, 0.5);
+                ;
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+                grid-template-rows: 1fr 1fr 1fr 1fr 1fr;    
+                .square {
+                    width: 124px;
+                    height: 124px;
+                    background-color: rgba(32, 33, 36, 0.5);
+                }   
+                .empty {
+                    background-color: transparent;
+                }
+            }
+        }   
+        .first-screen-content {
+            margin: 0;
+            display: flex;
+            flex-flow: column nowrap;
+            width: 45%;
+            z-index: 1; 
+            .empty-div {
+                margin: 0;
+                height: 300px;
+        } 
+        .first-screen-text {  
+            margin: 0;
+            padding-left: 10vw;   
+            h1 {
+                padding: 30px 0 30px 0;
+                margin: 0;
+                font-size: 25px;
+                line-height: 20px;
+                color: #fff;
+                font-weight: 400; 
+                span {
+                    color: #ffce76;
+                    font-weight: 600;
+                    padding-right: 10px;  
+                    svg {
+                        position: relative;
+                        top: -7px;
+                    }
+                }
+            }
+            
+            h2 {
+                margin: 0 5vw 0 0;
+                padding: 25px 0 25px 0;
+                text-transform: uppercase;
+                font-size: 60px;
+                font-weight: 600;
+                color: #fff;
+                line-height: 80px;
+                }
+            }
+        }
+    }
+}

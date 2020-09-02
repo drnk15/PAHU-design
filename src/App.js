@@ -1,87 +1,19 @@
-import React from 'react';
+import React, {Component} from 'react';
 import './App.scss';
+import Header from './components/header/header.js';
+import FirstScreen from './components/first-screen/first-screen.js';
 import {ReactComponent as ArrowLeft} from './svg/arrow-left.svg';
 import {ReactComponent as ArrowRight} from './svg/arrow-right.svg';
 import {ReactComponent as TitleUnderline} from './svg/title-underline.svg';
 import Images from './ImagesImporter.js';
-import Facebook from './svg/facebook.svg';
-import Twitter from './svg/twitter.svg';
-import YouTube from './svg/youtube.svg';
-import GooglePlus from './svg/google-plus.svg';
+import Footer from './components/footer/footer.js';
+
 
 function App() {
     return (
         <div className="App">
-            <header>
-                <div className="container flex-container">
-                    <div className="logo-header">
-                        <img src={Images["Logo.png"]} id="site-logo" alt="logo" />
-                    </div>
-                    <div className="header-nav">
-                        <a href="#" target="_blank" className="nav-link home-link">Home</a>
-                        <a href="#" target="_blank" className="nav-link">Features</a>
-                        <a href="#" target="_blank" className="nav-link">Shop</a>
-                        <a href="#" target="_blank" className="nav-link">Blog</a>
-                        <a href="#" target="_blank" className="nav-link">Accesories</a>
-                        <a href="#" target="_blank" className="nav-link">Contact</a>
-                    </div>
-                    <div className="buttons-header flex-container">
-                        <button className="header-button"><i className="fas fa-search"></i></button>
-                        <button className="header-button"><i className="far fa-heart"></i></button>
-                        <button className="header-button"><i className="fas fa-shopping-cart"></i><p id="number-of-items">0</p></button>
-                    </div>
-                </div>
-            </header>
-
-            <section className="first-screen">
-                <div className="container">
-                    <div className="svg-container">
-                        <ArrowLeft className="arrow left" />
-                        <ArrowRight className="arrow right" />
-                    </div>
-                    <div className="first-screen-empty-squares">
-                        <div className="squares-empty-div"></div>
-                        <div className="squares">
-                            <div className="square empty"></div>
-                            <div className="square"></div>
-                            <div className="square empty"></div>
-                            <div className="square"></div>
-                            <div className="square empty"></div>
-                            <div className="square"></div>
-                            <div className="square"></div>
-                            <div className="square"></div>
-                            <div className="square"></div>
-                            <div className="square"></div>
-                            <div className="square empty"></div>
-                            <div className="square"></div>
-                            <div className="square empty"></div>
-                            <div className="square"></div>
-                            <div className="square empty"></div>
-                            <div className="square"></div>
-                            <div className="square"></div>
-                            <div className="square"></div>
-                            <div className="square"></div>
-                            <div className="square"></div>
-                            <div className="square empty"></div>
-                            <div className="square"></div>
-                            <div className="square empty"></div>
-                            <div className="square"></div>
-                            <div className="square empty"></div>
-                        </div>
-                    </div>
-                    <div className="first-screen-content">
-                        <div className="empty-div"></div>
-                        <div className="first-screen-text">
-                            <h1>
-                                <span>
-                                </span>Welcome To <span>Pahu Design</span>
-                            </h1>
-                            <h2>You are in good hand with us</h2>
-                        </div>
-                        <div className="empty-div"></div>
-                    </div>
-                </div>
-            </section>
+            <Header />
+            <FirstScreen />
 
             <section className="why-choose-us">
                 <div className="container">
@@ -461,59 +393,7 @@ function App() {
                     </div>
                 </div>
             </section>
-            <footer>
-                <div className="container">
-                    <div className="contacts">
-                        <div>
-                            <h3>Call us now</h3>
-                            <p>Office telephone: (251) 546-9442<br/>Hotline: 906-2721</p>
-                        </div>
-                        <div>
-                            <h3>Come visit us</h3>
-                            <p>123 6th St.<br/>Melbourne, FL 32904</p>
-                        </div>   
-                        <div>
-                            <h3>Send a message</h3>
-                            <p>Email: pahudesign@pahu.vn<br/>Inquiries: support@pahu.vn </p>
-                        </div>   
-                    </div>
-                    <div className="footer-info">
-                        <div className="footer-part logo-social-media">
-                            <div className="logo">
-                                <img src={Images["Logo.png"]} />
-                            </div>
-                            <div className="social-media">
-                                <a href="https://facebook.com" target="_blank">
-                                    <img src={Facebook} alt="facebook" />
-                                </a>
-                                <a href="https://google.com" target="_blank">
-                                    <img src={GooglePlus} alt="google plus" />
-                                </a>
-                                <a href="https://twitter.com" target="_blank">
-                                    <img src={Twitter} alt="twitter" />
-                                </a>
-                                <a href="https://youtube.com" target="_blank">
-                                    <img src={YouTube} alt="youtube" />
-                                </a>
-                            </div>
-                        </div>
-                        <div className="footer-part">
-                            <h3>Hours work</h3>
-                            <p>Monday - Friday: 08:00 am - 17:00 pm.<br/>
-                            Saturday: 09:00 am - 12:30 pm.</p>
-                        </div>
-                        <div className="footer-part" id="newsletter">
-                            <h3>Newsletter</h3>
-                            <form action="url">
-                                <input type="email" id="subcription" placeholder="Enter your email..."/>
-                                <button type="submit">
-                                </button>
-                            </form>
-                            <p>Sign up to get exclusive offers from our favorite brands and to be well up in the news.</p>
-                        </div>
-                    </div>
-                </div>
-            </footer>
+            <Footer />
         </div>
     );    
 }   
