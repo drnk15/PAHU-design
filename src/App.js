@@ -4,9 +4,9 @@ import Header from './components/header/header.js';
 import FirstScreen from './components/first-screen/first-screen.js';
 import {ReactComponent as ArrowLeft} from './svg/arrow-left.svg';
 import {ReactComponent as ArrowRight} from './svg/arrow-right.svg';
-import {ReactComponent as TitleUnderline} from './svg/title-underline.svg';
 import Images from './ImagesImporter.js';
 import Footer from './components/footer/footer.js';
+import TitleTemplate from './components/title-template/title-template';
 
 
 function App() {
@@ -17,12 +17,7 @@ function App() {
 
             <section className="why-choose-us">
                 <div className="container">
-                    <div className="why-choose-us-title">
-                        <h2>Why choose us</h2>
-                        <p>
-                            <TitleUnderline />
-                        </p>
-                    </div>
+                    <TitleTemplate className="why-choose-us-title" title="Why choose us" />
                     <div className="why-choose-us-content">
                         <div className="why-choose-us-text">
                             <div className="why-choose-us-features">
@@ -103,29 +98,19 @@ function App() {
                         </div>
                     </div>
                     <div className="apples-example" id="apples-example">
-
                         <img src={Images["exampleapples.png"]} />
                     </div>
-
             </section>
 
-
-
-
             <section className="our-collection">
-                <div className="heading-col">
-                    <h1><span id="our-col">Our </span><span id="h1-collection">collection</span></h1>
-                    <img src={Images["rhomb.png"]} />
-                </div>
+                <TitleTemplate className="our-collection-title" title="Our colection" />
                 <div className="container flex-container">
                     <div className="item-collection">
-
                         <div className="hover-container flex-container container">
                             <div className="buttons-hover flex-container container">
                                 <div><button className="button-hover"><i className="fas fa-search"></i></button></div>
                                 <div><button className="button-hover"><i className="fas fa-shopping-cart"></i></button></div>
                                 <div><button className="button-hover"><i className="far fa-heart"></i></button></div>
-
                             </div>
                         </div>
                         <a href="https://www.behance.net/gallery/51790647/PAHU-Free-PSD-Website-Template" target="_blank"
@@ -138,7 +123,6 @@ function App() {
                                 <p className="price">$14.86</p>
                             </div>
                         </a>
-
                     </div>
                     <div className="item-collection">
                         <div className="hover-container flex-container container">
@@ -146,7 +130,6 @@ function App() {
                                 <div><button className="button-hover"><i className="fas fa-search"></i></button></div>
                                 <div><button className="button-hover"><i className="fas fa-shopping-cart"></i></button></div>
                                 <div><button className="button-hover"><i className="far fa-heart"></i></button></div>
-
                             </div>
                         </div>
                         <a href="https://www.behance.net/gallery/51790647/PAHU-Free-PSD-Website-Template" target="_blank"
@@ -158,7 +141,6 @@ function App() {
                                 <p className="price">$14.86</p>
                             </div>
                         </a>
-
                     </div>
                     <div className="item-collection">
                         <div className="hover-container flex-container container">
@@ -166,10 +148,8 @@ function App() {
                                 <div><button className="button-hover"><i className="fas fa-search"></i></button></div>
                                 <div><button className="button-hover"><i className="fas fa-shopping-cart"></i></button></div>
                                 <div><button className="button-hover"><i className="far fa-heart"></i></button></div>
-
                             </div>
                         </div>
-
                         <img src={Images["chair3.png"]} />
                         <img className="new-chair" src={Images["new.png"]} />
                         <div className="card-content">
@@ -177,8 +157,6 @@ function App() {
                             <p className="item-description">Printed evening dress with straight sleeves</p>
                             <p className="price">$14.86</p>
                         </div>
-
-
                     </div>
                     <div className="item-collection">
                         <div className="hover-container flex-container container">
@@ -186,19 +164,14 @@ function App() {
                                 <div><button className="button-hover"><i className="fas fa-search"></i></button></div>
                                 <div><button className="button-hover"><i className="fas fa-shopping-cart"></i></button></div>
                                 <div><button className="button-hover"><i className="far fa-heart"></i></button></div>
-
                             </div>
                         </div>
-
                         <img src={Images["chair4.png"]} />
                         <div className="card-content">
                             <h2>Corona chair</h2>
                             <p className="item-description">Printed evening dress with straight sleeves</p>
                             <p className="price">$14.86</p>
                         </div>
-
-
-
                     </div>
                     <div className="item-collection">
                         <div className="hover-container flex-container container">
@@ -206,18 +179,14 @@ function App() {
                                 <div><button className="button-hover"><i className="fas fa-search"></i></button></div>
                                 <div><button className="button-hover"><i className="fas fa-shopping-cart"></i></button></div>
                                 <div><button className="button-hover"><i className="far fa-heart"></i></button></div>
-
                             </div>
                         </div>
-
                         <img src={Images["chair5.png"]} />
                         <div className="card-content">
                             <h2>Corona chair</h2>
                             <p className="item-description">Printed evening dress with straight sleeves</p>
                             <p className="price">$14.86</p>
                         </div>
-
-
                     </div>
                     <div className="item-collection">
                         <div className="hover-container flex-container container">
@@ -225,18 +194,14 @@ function App() {
                                 <div><button className="button-hover"><i className="fas fa-search"></i></button></div>
                                 <div><button className="button-hover"><i className="fas fa-shopping-cart"></i></button></div>
                                 <div><button className="button-hover"><i className="far fa-heart"></i></button></div>
-
                             </div>
                         </div>
-
                         <img src={Images["chair6.png"]} />
                         <div className="card-content">
                             <h2>Corona chair</h2>
                             <p className="item-description">Printed evening dress with straight sleeves</p>
                             <p className="price">$14.86</p>
                         </div>
-
-
                     </div>
                     <div className="item-collection">
                         <div className="hover-container flex-container container">
@@ -244,10 +209,8 @@ function App() {
                                 <div><button className="button-hover"><i className="fas fa-search"></i></button></div>
                                 <div><button className="button-hover"><i className="fas fa-shopping-cart"></i></button></div>
                                 <div><button className="button-hover"><i className="far fa-heart"></i></button></div>
-
                             </div>
                         </div>
-
                         <img src={Images["chair7.png"]} />
                         <img className="new-chair" src={Images["new.png"]} />
                         <div className="card-content">
@@ -255,8 +218,6 @@ function App() {
                             <p className="item-description">Printed evening dress with straight sleeves</p>
                             <p className="price">$14.86</p>
                         </div>
-
-
                     </div>
                     <div className="item-collection">
                         <div className="hover-container flex-container container">
@@ -264,28 +225,20 @@ function App() {
                                 <div><button className="button-hover"><i className="fas fa-search"></i></button></div>
                                 <div><button className="button-hover"><i className="fas fa-shopping-cart"></i></button></div>
                                 <div><button className="button-hover"><i className="far fa-heart"></i></button></div>
-
                             </div>
                         </div>
-
                         <img src={Images["chair8.png"]} />
                         <div className="card-content">
                             <h2>Corona chair</h2>
                             <p className="item-description">Printed evening dress with straight sleeves</p>
                             <p className="price">$14.86</p>
                         </div>
-
-
                     </div>
-
                 </div>
                 <div className="button-more"><button className="our-collection-more" value="Show more" id="show-more-button" >Show more</button></div>
             </section>
             <section className="our-designers">
-                <div className="heading">
-                    <h1><span id="our">Our </span><span id="h1designer">designer</span></h1>
-                    <img src={Images["rhomb.png"]} />
-                </div>
+                <TitleTemplate className="our-designers-title" title="Our designers" />
                 <div className="container flex-container">
                     <div className="designer1">
                         <img src={Images["designer1.png"]} id="imgdes" />
@@ -304,14 +257,10 @@ function App() {
                     </div>
                 </div>
             </section>
+
             <section className="our-project">
                 <div className="container">
-                    <div className="our-projects-title">
-                        <h2>Our projects</h2>
-                        <p>
-                            <TitleUnderline />
-                        </p>
-                    </div>
+                    <TitleTemplate className="our-projects-title" title="Our projects" />
                     <div className="our-projects-samples">
                         <div className="project-dark-layer">
                             <ArrowLeft className="arrow left" />
@@ -352,13 +301,10 @@ function App() {
                     </div>
                 </div>
             </section>
+
             <section className="from-our-blog">
                 <div className="container">
-                    <div className="from-our-blog-title">
-                        <h2>From our blog</h2>
-                        <p>
-                        </p>
-                    </div>
+                    <TitleTemplate className="from-our-blog-title" title="From our blog" />
                     <div className="from-our-blog-posts">
                         <div className="blog-post">
                             <img src={Images["our-new-workspace.png"]} />
