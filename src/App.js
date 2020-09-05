@@ -4,9 +4,10 @@ import Header from './components/header/header.js';
 import FirstScreen from './components/first-screen/first-screen.js';
 import {ReactComponent as ArrowLeft} from './svg/arrow-left.svg';
 import {ReactComponent as ArrowRight} from './svg/arrow-right.svg';
+import TitleTemplate from './components/title-template/title-template';
 import Images from './ImagesImporter.js';
 import Footer from './components/footer/footer.js';
-import TitleTemplate from './components/title-template/title-template';
+import BlogPost from './components/blog-post/blog-post.js';
 
 
 function App() {
@@ -306,36 +307,9 @@ function App() {
                 <div className="container">
                     <TitleTemplate className="from-our-blog-title" title="From our blog" />
                     <div className="from-our-blog-posts">
-                        <div className="blog-post">
-                            <img src={Images["our-new-workspace.png"]} />
-                            <div className="blog-post-text">
-                                <h3>Our new work space</h3>
-                                <p>Feel alive! So if you’re looking for, here is a list of some of the most popular and fiestas the Mardin has to offer thisfiestas the Mardin has to offer!</p>
-                                <a href="https://google.com" target="_blank">
-                                    Read more
-                                </a>
-                            </div>
-                        </div>
-                        <div className="blog-post">
-                            <img src={Images["modern-trend-collection.png"]} />
-                            <div className="blog-post-text">
-                                <h3>Modern trend collection</h3>
-                                <p>Feel alive! So if you’re looking for, here is a list of some of the most popular and fiestas the Mardin has to offer thisfiestas the Mardin has to offer!</p>
-                                <a href="https://google.com" target="_blank">
-                                    Read more
-                                </a>
-                            </div>
-                        </div>
-                        <div className="blog-post">
-                            <img src={Images["a-woman-thinking.png"]} />
-                            <div className="blog-post-text">
-                                <h3>A woman thinking</h3>
-                                <p>Feel alive! So if you’re looking for, here is a list of some of the most popular and fiestas the Mardin has to offer thisfiestas the Mardin has to offer!</p>
-                                <a href="https://google.com" target="_blank">
-                                    Read more
-                                </a>
-                            </div>      
-                        </div>
+                        <BlogPost image={Images["our-new-workspace.png"]} title={"Our new workspace"} text={"Feel alive! So if you’re looking for, here is a list of some of the most popular and fiestas the Mardin has to offer thisfiestas the Mardin has to offer!"} link={"https://ya.ru"} />
+                        <BlogPost image={Images["modern-trend-collection.png"]} title={"Modern trend collection"} text={"Feel alive! So if you’re looking for, here is a list of some of the most popular and fiestas the Mardin has to offer thisfiestas the Mardin has to offer!"} link={"https://ya.ru"} />
+                        <BlogPost image={Images["a-woman-thinking.png"]} title={"A woman thinking"} text={"Feel alive! So if you’re looking for, here is a list of some of the most popular and fiestas the Mardin has to offer thisfiestas the Mardin has to offer!"} link={"https://ya.ru"} />
                     </div>
                 </div>
             </section>
