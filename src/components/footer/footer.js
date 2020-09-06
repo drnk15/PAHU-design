@@ -1,6 +1,6 @@
 import React from 'react';
 import './footer.scss';
-import Logo from './Logo.png';
+import PahuLogo from '../pahu-logo/pahu-logo.js';
 import Facebook from '../../svg/facebook.svg';
 import Twitter from '../../svg/twitter.svg';
 import YouTube from '../../svg/youtube.svg';
@@ -28,7 +28,7 @@ function Footer() {
                 <div className="footer-info">
                     <div className="footer-part logo-social-media">
                         <div className="logo">
-                            <img src={Logo} />
+                            <PahuLogo />
                         </div>
                         <div className="social-media">
                             <a href="https://facebook.com" target="_blank">

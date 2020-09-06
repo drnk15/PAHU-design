@@ -1,14 +1,13 @@
 import React from 'react';
 import './header.scss';
-import Logo from './Logo.png';
+import PahuLogo from '../pahu-logo/pahu-logo.js';
+import ActionsIcons from '../actions-icons/actions-icons';
 
 function Header() {
     return (
             <header>
                 <div className="container flex-container">
-                    <div className="logo-header">
-                        <img src={Logo} id="site-logo" alt="logo" />
-                    </div>
+                    <PahuLogo />
                     <div className="header-nav">
                         <a href="#" target="_blank" className="nav-link home-link">Home</a>
                         <a href="#" target="_blank" className="nav-link">Features</a>
@@ -17,11 +16,7 @@ function Header() {
                         <a href="#" target="_blank" className="nav-link">Accesories</a>
                         <a href="#" target="_blank" className="nav-link">Contact</a>
                     </div>
-                    <div className="buttons-header flex-container">
-                        <button className="header-button"><i className="fas fa-search"></i></button>
-                        <button className="header-button"><i className="far fa-heart"></i></button>
-                        <button className="header-button"><i className="fas fa-shopping-cart"></i><p id="number-of-items">0</p></button>
-                    </div>
+                    <ActionsIcons />
                 </div>
             </header>
     );

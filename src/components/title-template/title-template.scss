@@ -12,5 +12,11 @@
     }
     p {
         height: 1em;
+        svg:nth-child(2) {
+            margin: 0 10px;
+        }
+    }
+    p > svg {
+        height: 1em;
     }
 }

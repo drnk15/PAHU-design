@@ -2,18 +2,21 @@ import React, {Component} from 'react';
 import './App.scss';
 import Header from './components/header/header.js';
 import FirstScreen from './components/first-screen/first-screen.js';
-import {ReactComponent as ArrowLeft} from './svg/arrow-left.svg';
-import {ReactComponent as ArrowRight} from './svg/arrow-right.svg';
-import TitleTemplate from './components/title-template/title-template';
+import TitleTemplate from './components/title-template/title-template.js';
+import CollectionItem from './components/collection-item/collection-item.js';
 import Images from './ImagesImporter.js';
 import Footer from './components/footer/footer.js';
 import BlogPost from './components/blog-post/blog-post.js';
+import SliderArrows from './components/slider-arrows/slider-arrows.js';
+import ProjectSample from './components/project-sample/project-sample';
 
 
 function App() {
     return (
         <div className="App">
+
             <Header />
+
             <FirstScreen />
 
             <section className="why-choose-us">
@@ -220,24 +223,11 @@ function App() {
                             <p className="price">$14.86</p>
                         </div>
                     </div>
-                    <div className="item-collection">
-                        <div className="hover-container flex-container container">
-                            <div className="buttons-hover flex-container container">
-                                <div><button className="button-hover"><i className="fas fa-search"></i></button></div>
-                                <div><button className="button-hover"><i className="fas fa-shopping-cart"></i></button></div>
-                                <div><button className="button-hover"><i className="far fa-heart"></i></button></div>
-                            </div>
-                        </div>
-                        <img src={Images["chair8.png"]} />
-                        <div className="card-content">
-                            <h2>Corona chair</h2>
-                            <p className="item-description">Printed evening dress with straight sleeves</p>
-                            <p className="price">$14.86</p>
-                        </div>
-                    </div>
+                    <CollectionItem />
                 </div>
                 <div className="button-more"><button className="our-collection-more" value="Show more" id="show-more-button" >Show more</button></div>
             </section>
+
             <section className="our-designers">
                 <TitleTemplate className="our-designers-title" title="Our designers" />
                 <div className="container flex-container">
@@ -263,42 +253,15 @@ function App() {
                 <div className="container">
                     <TitleTemplate className="our-projects-title" title="Our projects" />
                     <div className="our-projects-samples">
-                        <div className="project-dark-layer">
-                            <ArrowLeft className="arrow left" />
-                            <ArrowRight className="arrow right" />
-                        </div>
-                        <div className="project" id="project-1">
-                            <h3>Modern living room</h3>
-                            <p>Interior design</p>
-                        </div>
-                        <div className="project" id="project-2">
-                            <h3>Modern living room</h3>
-                            <p>Interior design</p>
-                        </div>
-                        <div className="project" id="project-3">
-                            <h3>Modern living room</h3>
-                            <p>Interior design</p>
-                        </div>
-                        <div className="project" id="project-4">
-                            <h3>Modern living room</h3>
-                            <p>Interior design</p>
-                        </div>
-                        <div className="project" id="project-5">
-                            <h3>Modern living room</h3>
-                            <p>Interior design</p>
-                        </div>
-                        <div className="project" id="project-6">
-                            <h3>Modern living room</h3>
-                            <p>Interior design</p>
-                        </div>
-                        <div className="project" id="project-7">
-                            <h3>Modern living room</h3>
-                            <p>Interior design</p>
-                        </div>
-                        <div className="project" id="project-8">
-                            <h3>Modern living room</h3>
-                            <p>Interior design</p>
-                        </div>
+                        <SliderArrows className="project-dark-layer" />
+                        <ProjectSample id={"project-1"} heading={"Modern living room"} description={"Interior design"} />
+                        <ProjectSample id={"project-2"} heading={"Modern living room"} description={"Interior design"} />
+                        <ProjectSample id={"project-3"} heading={"Modern living room"} description={"Interior design"} />
+                        <ProjectSample id={"project-4"} heading={"Modern living room"} description={"Interior design"} />
+                        <ProjectSample id={"project-5"} heading={"Modern living room"} description={"Interior design"} />
+                        <ProjectSample id={"project-6"} heading={"Modern living room"} description={"Interior design"} />
+                        <ProjectSample id={"project-7"} heading={"Modern living room"} description={"Interior design"} />
+                        <ProjectSample id={"project-8"} heading={"Modern living room"} description={"Interior design"} />
                     </div>
                 </div>
             </section>

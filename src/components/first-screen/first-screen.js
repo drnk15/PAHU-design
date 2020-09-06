@@ -1,16 +1,12 @@
 import React from 'react';
 import './first-screen.scss';
-import {ReactComponent as ArrowLeft} from '../../svg/arrow-left.svg';
-import {ReactComponent as ArrowRight} from '../../svg/arrow-right.svg';
+import SliderArrows from '../slider-arrows/slider-arrows.js'
 
 export default function FirstScreen() {
     return (
         <section className="first-screen">
             <div className="container">
-                <div className="svg-container">
-                    <ArrowLeft className="arrow left" />
-                    <ArrowRight className="arrow right" />
-                </div>
+                <SliderArrows className="svg-container" />
                 <div className="first-screen-empty-squares">
                     <div className="squares-empty-div"></div>
                     <div className="squares">

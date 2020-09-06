@@ -1,36 +1,35 @@
 header {
+
+    overflow: hidden; //TEMPORARY
+
     width: 100%;
     height: 100px;
+    position: fixed;
+    z-index: 3;
     background-color: #1e1e1d;
     .container {
+        width: 100%;
+        height: 100px;
+        padding: 20px 10vw;
         display: flex;
-        justify-content: center;
-        align-items: stretch;
-        padding-top: 34px;
-    }
-    .logo-header {
-        height: 30px;
-        margin: 0 41px;
-    }       
+        justify-content: space-around;
+        align-items: center;
+    }      
     a.nav-link {
-    position: relative;
-    margin-left: 23px;
-    margin-right: 23px;
+    margin: 0 1em;
     font-family: Poppins;
     font-size: 14px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 2.36;
     letter-spacing: 2.4px;
-    text-align: left;
     color: #fefefe;
     text-transform: uppercase;
     text-decoration: none;
     }
     .header-nav {
-        position: relative;
-        margin: 0 18px;
+        flex: 2;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-around;
+        margin: 0 35px;
     }
     .header-nav::after {
         content: '';
@@ -41,11 +40,12 @@ header {
         width: 41px;
         background-color: #f2cd7a;
     }
-    .buttons-header {
-        margin: 0 30px;
+    .actions-icons {
+        display: flex;
+        flex-flow: row nowrap;
     }
-    .header-button {
-        background-color: #1e1e1d;
+    .action-button {
+        background-color: inherit;
         color: #fefefe;
         border: none;
         margin: 0 5px 0 12px;

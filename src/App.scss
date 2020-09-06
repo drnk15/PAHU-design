@@ -1,35 +1,22 @@
-
-
 .why-choose-us{
-    margin: 0;
     background-color:#181817;
     width: 100%;
     height: 750px;
     text-align: center;
 
     .container {
-        margin: 0;
         height: 750px;
 
         .why-choose-us-title {
-            padding: 70px;
-            width: 100%;
-            text-align: center;
             h2 {
-                text-transform: uppercase;
-                font-size: 40px;
-                letter-spacing: 4px;
                 color: #ffce76;
-                line-height: 19px;
-                margin-bottom: 16px;
             }
-            p {
-                height: 1em;
+            p > svg {
+                fill: #f00; //not working!!!!!!!!!!
             }
         }
 
         .why-choose-us-content {
-            margin: 0;
             padding: 0px 10vw 95px;
             display: flex;
             flex-flow: row nowrap;
@@ -51,7 +38,6 @@
                         p {
                             display: block;
                             color: #fff;
-                            margin: 0;
                             width: 18vw;
                             padding: 23px 0;
                         }
@@ -221,7 +207,6 @@ section.our-collection {
             padding: 0 0 37px 0;
         }
             .item-collection {
-
                 width: 272px;
                 height: 400px;
                 position: relative;
@@ -385,7 +370,11 @@ section.our-collection {
                 border-radius: 45px;
                 margin-top: 26px;
             }
+
 section.our-designers {
+
+    overflow: hidden; //TEMPORARY
+
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -394,50 +383,7 @@ section.our-designers {
     background-color: black;
     background-image: url('./img/designersfield.png');
     padding: 50px 80px;
-        .heading {
-        width: 100%;
-        text-align: center;
-            h1 {
-            margin-top: 0;
-            padding-top: 38px;
-            padding-bottom: 16px;
-            height: 30px;
-            font-family: Poppins;
-            font-size: 40px;
-            font-weight: 600;
-            font-stretch: normal;
-            font-style: normal;
-            letter-spacing: 4px;
-            color: #f2cd7a;
-            text-transform: uppercase;
-                #our {
-                position: relative;
-                }
-                #our::after {
-                content: '';
-                position: absolute;
-                left: -56px;
-                bottom: -5px;
-                width: 205px;
-                height: 1px;
-                opacity: 0.3;
-                background-color: #ffffff;
-                }
-                #h1designer {
-                position: relative;
-                }
-                #h1designer::after {
-                content: '';
-                position: absolute;
-                left: 72px;
-                bottom: -5px;
-                width: 205px;
-                height: 1px;
-                opacity: 0.3;
-                background-color: #ffffff;
-                }
-            }
-        }
+
         .flex-container {
         align-items: center;
         display: flex;
@@ -553,29 +499,12 @@ section.our-designers {
                 }
             }
     }
-}    
+}
+
 .our-project {
     width: 100%;
     .container {
         width: 100%;
-        margin: 0;  
-        .our-projects-title {
-            width: 100%;
-            padding: 70px;
-            background-color: #fff;
-            text-align: center; 
-            h2 {
-                text-transform: uppercase;
-                font-size: 40px;
-                letter-spacing: 4px;
-                color: #181817;
-                line-height: 19px;
-                margin-bottom: 16px;
-            }   
-            p > svg {
-                height: 1em;
-            }
-        }   
         .our-projects-samples {
             width: 100%;
             height: 1000px;
@@ -583,62 +512,10 @@ section.our-designers {
             flex-flow: row nowrap;
             overflow: hidden;   
             .project-dark-layer {
-                width: 100%;
                 height: 1000px;
-                position: absolute;
                 background-color: #404040;
                 opacity: 0.5;
-                display: flex;
-                justify-content: space-between; 
-                .arrow {
-                    width: 5em;
-                    height: 5em;
-                    margin: 20px;
-                    margin-top: 470px;
-                    padding: 30px;
-                    border: 4px solid rgba(255, 255, 255, 0.1);
-                    background-color: rgba(0, 0, 0, 0.1);
-                    border-radius: 50%;
-                }   
-                .arrow:hover {
-                    cursor: pointer;
-                    background-color: rgba(0, 0, 0, 0.5);
-                    border: 4px solid rgba(255, 255, 255, 0.3);
-                }   
-                .arrow .left {
-                    visibility: hidden;
-                }
-            }   
-            .project {
-                text-transform: uppercase;
-                color: #fff;
-                margin: 0;
-                width: 25%;
-                flex-shrink: 0;
-                background-position: center;
-                background-repeat: no-repeat;
-                background-size: cover;
-                transition: 0.5s ease-in-out;   
-                h3 {
-                    margin: 0;
-                    font-size: 30px;
-                    letter-spacing: 3px;
-                    position: relative;
-                    padding:57px 100px 61px 57px;
-                    height: 300px;
-                }   
-                p { 
-                    margin: 44px;
-                    transform: rotate(-90deg);
-                    font-size: 20px;
-                    letter-spacing: 7.96px;
-                    font-weight: 600;
-                    position: relative;
-                    width: 400px;
-                    top: 400px;
-                    right: 190px;
-                }
-            }   
+            }  
             #project-1 {
                 background-image: url("./img/modern-living-room-1.png");
             }   
@@ -677,70 +554,11 @@ section.our-designers {
     .container {
         width: 100%;
         height: 
-        860px;  
-        .from-our-blog-title {
-            padding: 70px;
-            width: 100%;
-            text-align: center; 
-            h2 {
-                text-transform: uppercase;
-                font-size: 40px;
-                letter-spacing: 4px;
-                color: #181817;
-                line-height: 19px;
-                margin-bottom: 16px;
-            }   
-            p > svg {
-                height: 1em;
-            }
-        }   
+        860px;   
         .from-our-blog-posts {
             display: flex;
             justify-content: space-evenly;
             padding-bottom: 115px;  
-            .blog-post {
-                width: 372px;
-                height: 515px;
-                background-color: #fff; 
-                img {
-                    width: 100%;
-                    height: auto;
-                }   
-                .blog-post-text {
-                    padding: 25px 32px 25px 25px;   
-                    h3 {
-                        padding-left: 2px;
-                        font-size: 20px;
-                        text-transform: uppercase;
-                        color: #000;
-                        margin: 0;
-                    }   
-                    p {
-                        color: #31302d;
-                        font-size: 14px;
-                        opacity: 0.7;
-                    }   
-                    a { 
-                        display: flex;
-                        align-items: center;         
-                        text-decoration: none;
-                        width: 160px;
-                        height: 50px;
-                        padding: 20px;
-                        background-color: #ffce76;
-                        color: #000;
-                        font-size: 14px;
-                        font-weight: 600;
-                        text-transform: uppercase;
-                        letter-spacing: 1.4px;  
-                        svg {
-                            width: 1em;
-                            height: 1em;
-                            margin-left: 13px;
-                        }
-                    }
-                }
-            }
         }
     }
 }

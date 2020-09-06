@@ -1,0 +1,30 @@
+.project {
+    text-transform: uppercase;
+    color: #fff;
+    margin: 0;
+    width: 25%;
+    flex-shrink: 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: 0.5s ease-in-out;   
+    h3 {
+        margin: 0;
+        font-size: 30px;
+        letter-spacing: 3px;
+        position: relative;
+        padding:57px 100px 61px 57px;
+        height: 300px;
+    }   
+    p { 
+        margin: 44px;
+        transform: rotate(-90deg);
+        font-size: 20px;
+        letter-spacing: 7.96px;
+        font-weight: 600;
+        position: relative;
+        width: 400px;
+        top: 400px;
+        right: 190px;
+    }
+} 
